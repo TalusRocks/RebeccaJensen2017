@@ -2374,4 +2374,13 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
+  //copyright current year
+  function copyrightYear() {
+     var d = new Date();
+     var y = d.getFullYear();
+     document.getElementById("copyright").innerHTML = y ;
+  }
+
+copyrightYear();
+
 }(jQuery);
