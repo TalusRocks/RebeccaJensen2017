@@ -7,8 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Rebecca Jensen - Portfolio</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
 
     <!--Google Fonts -->
@@ -24,80 +23,94 @@
   <body>
 
   
-
-
-  <!-- NAVIGATION -->
-  <nav class="navigation">
-    <ul class="text-center">
-      <li><a href="rebeccajensen.html" title="Welcome">Welcome</a></li>
-      <li><a href="portfolio.html" id="current" title="Portfolio">Portfolio</a></li>
-      <li><a href="resume.html" title="Resume">Resume</a></li>
-      <li><a href="contact.html" title="Contact">Contact</a></li>
+<!-- NAVIGATION -->
+  <nav class="navigation sm-mrg-bottom">
+    <ul class="menu">
+      <li class="home"><a href="index.html" id="orange" title="Home">Rebecca Jensen</a></li>
+      <li class="menu-item"><a href="portfolio.html" id="current" title="Portfolio">Portfolio</a></li>
+      <li class="menu-item"><a href="resume.html" title="Resume">Resume</a></li>
+      <li class="menu-item"><a href="contact.html" title="Contact">Contact</a></li>
+      <li class="menu-burger">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </li>
+    </ul>
+    <ul class="mobile-menu">
+      <li class="menu-item"><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+      <li class="menu-item"><a href="resume.html" title="Resume">Resume</a></li>
+      <li class="menu-item"><a href="contact.html" title="Contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- MAIN CONTENT -->
-  <div class="row">
-    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 lg-pad-top col-xs-12 lg-pad-bottom">
 
-      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <div class="portfolio-div">
+    <div class="sm-pad">
 
-        <h1>Portfolio</h1>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
 
-        <!-- motion.social -->
-        <a name="motionsocial"></a>
-        <h3 class="sm-pad-top"><strong><a href="https://motion.social" title="motion.social">motion.social</a></strong></h3>
+      <h1>Portfolio</h1>
 
-        <p><a href="https://motion.social/" title="View Site">View Site</a></p>
-
-        <p>In its infancy, motion.social was simply a web page with a collection of bike routes. The Co-Founders knew they wanted to target active people who are motivated by social connection over performance data, but exactly how that translated into a product was undecided.<br></br>
-        Then, I was hired as a UX/UI Designer, and I immediately began conducting user interviews. I sat one-on-one with active people and asked them about their habits, goals, and frustrations. Through this I discovered that a common frustration was <i>planning</i> group activities. Long e-mail threads, inescapable group texts, and generic planning platforms were a pain to use. After examining the market, it was clear that many products focused on the <i>'during'</i> (tracking) and <i>'after'</i> (posting) part of an activity, but not the very beginning phase of getting a group of people together. Thus, with these findings, I designed a planning tool, with features more precisely targeted at socially and physically active users.</p>
-
-        
-        <a href="images/ms-group-personas.png">
-        <img src="images/ms-group-personas.png" alt="motion.social personas" class="img-responsive border sm-mrg-top"></a>
-
-        <img src="images/ms-userflow.png" alt="motion.social user flow" class="img-responsive border sm-mrg-top">
-
-        <img src="images/ms-sitemap.png" alt="motion.social site map" class="img-responsive border sm-mrg-top">
-
-        <img src="images/ms-mock-activitypagemobile.png" alt="motion.social activity page mock for mobile" class="img-responsive border sm-mrg-top">
-
-        <img src="images/ms-mock-homedesktop.png" alt="motion.social home page mock for desktop" class="img-responsive border sm-mrg-top">
-
-        <!-- CascadeOC -->
-        <a name="cascadeoc"></a>
-        <h3 class="sm-pad-top"><strong><a href="https://cascadeoc.org" title="Cascade Orienteering Club">Cascade Orienteering Club</a></strong></h3>
-
-        <p><a href="http://cascadeoc.org/" title="View Site">View Site</a></p>
-
-        <p>As an enthusiastic orienteer who loves introducing newcomers to the sport, I took on a complete redesign of the Cascade Orienteering Club web page. I began by interviewing users, from prospective participants to long-time veterans. My task was to design a page that would be welcoming to the former, yet efficent for the latter. With this in mind, I designed the front page to have a clear welcome mat for newcomers, which would direct them to friendly newcomer content, while creating one-click opportunities for veterans to register, get directions to the next event, and find the most recent results.<br></br>In addition to designing the site, I also wrote the Wordpress theme from scratch (PHP), in order to have complete control over the design.</p>
-
-        <img src="images/coc-persona.png" alt="Cascade user persona" class="img-responsive border sm-mrg-top">
-
-        <img src="images/coc-userflow.png" alt="Cascade user flow" class="img-responsive border sm-mrg-top">
-        
-        <img src="images/coc-wireframe.png" alt="Cascade wireframe" class="img-responsive border sm-mrg-top">
-
-        <img src="images/coc-site-map.png" alt="Cascade site map" class="img-responsive border sm-mrg-top">
-
-        <!-- MerGeo -->
-        <a name="mergeo"></a>
-        <h3 class="sm-pad-top"><strong><a href="https://mergeo.com" title="MerGeo">Meridian Geographics (MerGeo)</a></strong></h3>
-
-        <p>I directed a complete rebranding and website resdesign at MerGeo. While working with the Web Developer that we'd hired, I realized that I wanted to do more of his job than a client really should; and that's what lead me to become a UX Designer!<br></br><a href="http://nwtrailruns.com/" title="nwtrailruns.com">nwtrailruns.com</a><br></br><a href="http://streetscramble.com/" title="streetscramble.com">streetscramble.com</a><br></br><a href="http://navraces.com/" title="navraces.com">navraces.com</a></p>
-
-        <img src="images/mergeo-logos.png" alt="MerGeo logos" class="img-responsive border sm-mrg-top">
+      <!-- motion.social -->
+      <a name="motionsocial"></a>
+      <h3 class="sm-pad-top"><strong>motion.social</strong> - <a href="https://motion.social/" title="Visit motion.social site">Visit Site</a></h3>
+      <hr></hr>
 
 
-    </div>
-  </div>
+      <p>In its infancy, motion.social was simply a web page with a collection of bike routes. The Co-Founders knew they wanted to target active people who are motivated by social connection over performance data, but exactly how that translated into a product was undecided.<br></br>
+      Then I was brought on as a UX/UI Designer and first hire, and I immediately began conducting user interviews. I sat one-on-one with active people and asked them about their habits, goals, and frustrations. Through this I discovered that a common frustration was <i>planning</i> group activities. Long e-mail threads, inescapable group texts, and generic planning platforms were a pain to use. After examining the market, it was clear that many products focused on the <i>'during'</i> (tracking) and <i>'after'</i> (posting) part of an activity, but not the very beginning phase of getting a group of people together. Thus, with these findings, I designed a planning tool, with features more precisely targeted at socially and physically active users.</p>
+
+      
+      <a href="images/ms-group-personas.png">
+      <img src="images/ms-group-personas.png" alt="motion.social personas" class="img-responsive border sm-mrg-top"></a>
+
+      <img src="images/ms-userflow.png" alt="motion.social user flow" class="img-responsive border sm-mrg-top">
+
+      <img src="images/ms-sitemap.png" alt="motion.social site map" class="img-responsive border sm-mrg-top">
+
+      <img src="images/ms-mock-activitypagemobile.png" alt="motion.social activity page mock for mobile" class="img-responsive border sm-mrg-top">
+
+      <img src="images/ms-mock-homedesktop.png" alt="motion.social home page mock for desktop" class="img-responsive border sm-mrg-top">
+
+      <!-- CascadeOC -->
+      <a name="cascadeoc"></a>
+      <h3 class="lg-pad-top"><strong>Cascade Orienteering Club</strong> - <a href="https://cascadeoc.org" title="Visit Cascade Orienteering Club Site">Visit Site</a></h3>
+      <hr></hr>
+
+      <p>As an enthusiastic orienteer who loves introducing newcomers to the sport, I took on a complete redesign of the Cascade Orienteering Club web page. I did this as my capstone project for <a href="https://www.bloc.io/">BLOC</a>, an online bootcamp course, in lieu of a much simpler project for an imaginary company. I not only wanted real-world experience, but I wanted my work to mean something.
+      <br></br>I began by interviewing users, from prospective participants to long-time veterans. My task was to design a page that would be welcoming to the former, yet efficent for the latter. With this in mind, I designed the front page to have a clear welcome mat for newcomers, which would direct them to friendly newcomer content, while creating one-click opportunities for veterans to register, get directions to the next event, and find the most recent results.<br></br>In addition to designing the site, I also wrote the Wordpress theme from scratch (PHP), in order to have complete control over the design.
+      <br></br>The club still uses the template today, and the design is under consideration to be replicated for clubs across the country.</p>
+
+      <img src="images/coc-persona.png" alt="Cascade user persona" class="img-responsive border sm-mrg-top">
+
+      <img src="images/coc-userflow.png" alt="Cascade user flow" class="img-responsive border sm-mrg-top">
+      
+      <img src="images/coc-wireframe.png" alt="Cascade wireframe" class="img-responsive border sm-mrg-top">
+
+      <img src="images/coc-site-map.png" alt="Cascade site map" class="img-responsive border sm-mrg-top">
+
+      <!-- MerGeo -->
+      <a name="mergeo"></a>
+      <h3 class="lg-pad-top"><strong>Meridian Geographics (MerGeo)</strong> - <a href="https://mergeo.com" title="Visit MerGeo Site">Visit Site</a></h3>
+      <hr></hr>
+
+      <p>I directed a complete rebranding and website redesign at MerGeo. While working with the Web Developer that we'd hired, I realized that I wanted to do more of his job than a client really should; and that's what lead me to become a UX Designer!<br></br><a href="http://nwtrailruns.com/" title="nwtrailruns.com">nwtrailruns.com</a><br></br><a href="http://streetscramble.com/" title="streetscramble.com">streetscramble.com</a><br></br><a href="http://navraces.com/" title="navraces.com">navraces.com</a></p>
+
+      <img src="images/mergeo-logos.png" alt="MerGeo logos" class="img-responsive border sm-mrg-top">
+
+    </div> <!-- sm pad -->
+  </div> <!-- flex container -->
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- my JavaScript -->
+  <script src="js/rebecca.js"></script>
   </body>
 </html>
 

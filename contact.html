@@ -11,8 +11,7 @@
 
     <title>Rebecca Jensen - Contact</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Wufoo CSS -->
@@ -20,8 +19,7 @@
     <!--   <link href="css/form.css" rel="stylesheet"> -->
     <!--   <link href="css/theme.css" rel="stylesheet"> -->
 
-    <!-- Wufoo JavaScript -->
-    <script src="js/wufoo.js"></script>
+    
 
     <!--[if lt IE 10]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,21 +39,30 @@
 
 
   <!-- NAVIGATION -->
-  <nav class="navigation">
-    <ul class="text-center">
-      <li><a href="rebeccajensen.html" tabindex="-1" title="Welcome">Welcome</a></li>
-      <li><a href="portfolio.html" tabindex="-1" title="Portfolio">Portfolio</a></li>
-      <li><a href="resume.html" tabindex="-1" title="Resume">Resume</a></li>
-      <li><a href="contact.html" tabindex="-1" id="current" title="Contact">Contact</a></li>
+  <nav class="navigation sm-mrg-bottom">
+    <ul class="menu">
+      <li class="home"><a href="index.html" id="orange" title="Home">Rebecca Jensen</a></li>
+      <li class="menu-item"><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+      <li class="menu-item"><a href="resume.html" title="Resume">Resume</a></li>
+      <li class="menu-item"><a href="contact.html" id="current" title="Contact">Contact</a></li>
+      <li class="menu-burger">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </li>
+    </ul>
+    <ul class="mobile-menu">
+      <li class="menu-item"><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+      <li class="menu-item"><a href="resume.html" title="Resume">Resume</a></li>
+      <li class="menu-item"><a href="contact.html" title="Contact">Contact</a></li>
     </ul>
   </nav>
 
 
   <!-- MAIN CONTENT -->
 
-  <div class="row">
-    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 lg-pad-top col-xs-12 lg-pad-bottom">
-
+  <div class="contact-div">
+    <div class="sm-pad">
       <div id="container" class="ltr">
 
         <h1>Send me a message</h1>
@@ -75,7 +82,7 @@
           <span id="req_2" class="req">*</span>
           </label>
       
-          <div>
+          <div class="tiny-pad-top">
             <input id="Field2" name="Field2" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="1"       required />
           </div>
           </li>
@@ -86,7 +93,7 @@
             Message
             <span id="req_1" class="req">*</span>
             </label>
-          <div>
+          <div class="tiny-pad-top">
             <textarea id="Field1"
             name="Field1"
             class="field textarea medium"
@@ -117,19 +124,26 @@
              
 
           </div><!--container-->
-
+          <footer>
             <p class="fineprint lg-pad-top" tabindex="-1">Powered by <a href="https://www.wufoo.com/" title="Wufoo">Wufoo</a>, under <a href="https://creativecommons.org/licenses/by/3.0/us/" title="Creative Commons">Creative Commons</a></p>
+          </footer>
 
       </div> 
 
-    </div><!-- col -->
-  </div><!-- row -->
+    </div> <!-- sm pad -->
+  </div> <!-- flex container -->
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- Wufoo JavaScript -->
+  <script src="js/wufoo.js"></script>
+  <!-- my JavaScript -->
+  <script src="js/rebecca.js"></script>
   </body>
 </html>
 
