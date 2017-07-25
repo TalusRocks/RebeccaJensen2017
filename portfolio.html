@@ -12,7 +12,9 @@
 
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:400" rel="stylesheet">
-
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,7 +28,7 @@
 <!-- NAVIGATION -->
   <nav class="navigation sm-mrg-bottom">
     <ul class="menu">
-      <li class="home"><a href="index.html" id="orange" title="Home">Rebecca Jensen</a></li>
+      <li class="home"><a href="index.html" title="Home">Rebecca Jensen</a></li>
       <li class="menu-item"><a href="portfolio.html" id="current" title="Portfolio">Portfolio</a></li>
       <li class="menu-item"><a href="resume.html" title="Resume">Resume</a></li>
       <li class="menu-item"><a href="contact.html" title="Contact">Contact</a></li>
@@ -48,56 +50,91 @@
   <div class="portfolio-div">
     <div class="sm-pad">
 
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+<!--       <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button> -->
 
       <h1>Portfolio</h1>
 
+      <p>I feel fortunate that in my UX work so far, I've been able to tackle the whole process and product, giving me a broad understanding and great foundation in UX to build from. As a one-woman design team, I've relied on quick and effective methods to get things done.</p>
+
       <!-- motion.social -->
       <a name="motionsocial"></a>
-      <h3 class="sm-pad-top"><strong>motion.social</strong> - <a href="https://motion.social/" title="Visit motion.social site">Visit Site</a></h3>
-      <hr></hr>
-
-
-      <p>In its infancy, motion.social was simply a web page with a collection of bike routes. The Co-Founders knew they wanted to target active people who are motivated by social connection over performance data, but exactly how that translated into a product was undecided.<br></br>
-      Then I was brought on as a UX/UI Designer and first hire, and I immediately began conducting user interviews. I sat one-on-one with active people and asked them about their habits, goals, and frustrations. Through this I discovered that a common frustration was <i>planning</i> group activities. Long e-mail threads, inescapable group texts, and generic planning platforms were a pain to use. After examining the market, it was clear that many products focused on the <i>'during'</i> (tracking) and <i>'after'</i> (posting) part of an activity, but not the very beginning phase of getting a group of people together. Thus, with these findings, I designed a planning tool, with features more precisely targeted at socially and physically active users.</p>
-
+      <div class="portfolio-item md-mrg-top">
       
-      <a href="images/ms-group-personas.png">
-      <img src="images/ms-group-personas.png" alt="motion.social personas" class="img-responsive border sm-mrg-top"></a>
+        <div class="portfolio-logo">
+          <a href="motionsocial.html"> 
+            <img src="images/ms-square.png">
+          </a>
+        </div>
+        <a href="motionsocial.html">
+          <div class="portfolio-text">
+            <div class="sm-pad">
+              
+              <h2>motion.social</h2>
+              <p>I was the first hire and sole Designer at motion.social, a startup focused on social fitness. Through user research, I defined both our target users and the product itself. I then designed the product, from the site map and user flows, to the smallest details of the user interface, iterating and testing with users as I went.</p>
+              
+              <div class="xs-mrg-top">
+                <a class="read-more" href="motionsocial.html">
+                  <h2>Read more </h2>
+                  <i class="arrow-icon material-icons">arrow_forward</i>
+                </a>
+              </div>   
 
-      <img src="images/ms-userflow.png" alt="motion.social user flow" class="img-responsive border sm-mrg-top">
+            </div>
+          </div>
+        </a>
+      </div>
 
-      <img src="images/ms-sitemap.png" alt="motion.social site map" class="img-responsive border sm-mrg-top">
-
-      <img src="images/ms-mock-activitypagemobile.png" alt="motion.social activity page mock for mobile" class="img-responsive border sm-mrg-top">
-
-      <img src="images/ms-mock-homedesktop.png" alt="motion.social home page mock for desktop" class="img-responsive border sm-mrg-top">
 
       <!-- CascadeOC -->
       <a name="cascadeoc"></a>
-      <h3 class="lg-pad-top"><strong>Cascade Orienteering Club</strong> - <a href="https://cascadeoc.org" title="Visit Cascade Orienteering Club Site">Visit Site</a></h3>
-      <hr></hr>
+      <div class="portfolio-item md-mrg-top">
+        <div class="portfolio-logo">
+          <a href="cascadeoc.html">
+            <img src="images/cascadeoc-square.png">
+          </a>
+        </div> <!-- logo image -->
+        <a href="mergeo.html">
+          <div class="portfolio-text">
+            <div class="sm-pad">
+              <h2>Cascade Orienteering Club</h2>
+              <p>As an enthusiastic orienteering who loves introducing newcomers to the sport, I took on a complete redesign of the Cascade Orienteering Club web page as my capstone project for BLOC, in lieu of a much simpler project for an imaginary company. I used UX methods to define personas, then test and iterate design solutions.</p>
+              <div class="sm-mrg-top">
+                <a class="read-more" href="cascadeoc.html">
+                  <h2>Read more </h2>
+                  <i class="arrow-icon material-icons">arrow_forward</i>
+                </a>
+              </div> <!-- read more arrow -->
+            </div> <!-- sm pad -->
+          </div> <!-- portfolio text -->
+        </a>
+      </div> <!-- portfolio item -->
 
-      <p>As an enthusiastic orienteer who loves introducing newcomers to the sport, I took on a complete redesign of the Cascade Orienteering Club web page. I did this as my capstone project for <a href="https://www.bloc.io/">BLOC</a>, an online bootcamp course, in lieu of a much simpler project for an imaginary company. I not only wanted real-world experience, but I wanted my work to mean something.
-      <br></br>I began by interviewing users, from prospective participants to long-time veterans. My task was to design a page that would be welcoming to the former, yet efficent for the latter. With this in mind, I designed the front page to have a clear welcome mat for newcomers, which would direct them to friendly newcomer content, while creating one-click opportunities for veterans to register, get directions to the next event, and find the most recent results.<br></br>In addition to designing the site, I also wrote the Wordpress theme from scratch (PHP), in order to have complete control over the design.
-      <br></br>The club still uses the template today, and the design is under consideration to be replicated for clubs across the country.</p>
-
-      <img src="images/coc-persona.png" alt="Cascade user persona" class="img-responsive border sm-mrg-top">
-
-      <img src="images/coc-userflow.png" alt="Cascade user flow" class="img-responsive border sm-mrg-top">
-      
-      <img src="images/coc-wireframe.png" alt="Cascade wireframe" class="img-responsive border sm-mrg-top">
-
-      <img src="images/coc-site-map.png" alt="Cascade site map" class="img-responsive border sm-mrg-top">
 
       <!-- MerGeo -->
       <a name="mergeo"></a>
-      <h3 class="lg-pad-top"><strong>Meridian Geographics (MerGeo)</strong> - <a href="https://mergeo.com" title="Visit MerGeo Site">Visit Site</a></h3>
-      <hr></hr>
+      <div class="portfolio-item md-mrg-top">
+        <div class="portfolio-logo">
+          <a href="mergeo.html">
+            <img src="images/mergeo-square.png">
+          </a>
+        </div>
+        <a href="mergeo.html">
+          <div class="portfolio-text">
+            <div class="sm-pad">
+              <h2>MerGeo</h2>
+              <p>As Marketing Manager, I directed a complete rebranding and website redesign for MerGeo and its three entities. While working with a Developer on the project, I realized that I wanted to learn more about the world of web design, which is how I discovered UX!</p>
+              <div class="sm-mrg-top">
+                <a class="read-more" href="mergeo.html">
+                  <h2>Read more </h2>
+                  <i class="arrow-icon material-icons">arrow_forward</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
 
-      <p>I directed a complete rebranding and website redesign at MerGeo. While working with the Web Developer that we'd hired, I realized that I wanted to do more of his job than a client really should; and that's what lead me to become a UX Designer!<br></br><a href="http://nwtrailruns.com/" title="nwtrailruns.com">nwtrailruns.com</a><br></br><a href="http://streetscramble.com/" title="streetscramble.com">streetscramble.com</a><br></br><a href="http://navraces.com/" title="navraces.com">navraces.com</a></p>
-
-      <img src="images/mergeo-logos.png" alt="MerGeo logos" class="img-responsive border sm-mrg-top">
+      <div class="lg-pad-top"></div>
 
     </div> <!-- sm pad -->
   </div> <!-- flex container -->
