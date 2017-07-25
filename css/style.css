@@ -23,10 +23,6 @@ a:active {
 	color: #F15946;
 }
 
-#current {
-	color: #DE3C4B;
-}
-
 #orange {
 	color: #F15742;
 }
@@ -42,11 +38,11 @@ h1 {
 }
 
 h2 {
-
+	font-size: 1.6em;
 }
 
 h3 {
-
+	font-size: 1.3em;
 }
 
 h4 {
@@ -65,6 +61,11 @@ hr {
 .border {
 	border: 1px solid #cccccc;
 }
+
+.right {
+	text-align: right;
+}
+
 
 
 /*-- PADDING --*/
@@ -122,6 +123,9 @@ nav ul {
 	padding: 60px;
 }
 
+.xs-mrg-top {
+	margin-top: 10px;
+}
 
 .sm-mrg-top {
 	margin-top: 20px;
@@ -129,6 +133,15 @@ nav ul {
 
 .sm-mrg-bottom {
 	margin-bottom: 20px;
+}
+
+.md-mrg-top {
+	margin-top: 40px;
+}
+
+.md-mrg-top-bottom {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
@@ -154,6 +167,10 @@ li.home {
 	margin-right: auto;
 }
 
+li.home a {
+	color: #F15946; /* orange */;
+}
+
 .navigation {
 	background-color: #2C302E;
 }
@@ -167,20 +184,30 @@ li.home {
 
 .navigation li a {
 	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 2px; /* pushes underline down */
 }
 
 .navigation a {
-	color: #63B0CD;
+	color: #63B0CD; /* blue */
+	transition: .5s color;
 }
 
 .navigation a:hover {
-	color: #DE3C4B;
+	color: #DE3C4B; /* pink */
 	text-decoration: none;
 }
 
 .navigation a:active {
-	color: #F15946;
+	color: #F15946; /* orange */
 }
+
+#current {
+	color: #DE3C4B; /* pink */
+	border-bottom: 2px solid;
+}
+
+
+
 
 /*-- MOBILE MENU --*/
 
@@ -194,17 +221,7 @@ li.home {
 .mobile-menu li:hover, .mobile-menu li:active {
 	background-color: #d3d6d6;
 }
-/*.menu-burger hr {
-	width: 16px;
-	margin: 4px 0px;
-	border: 1px solid #ffffff;
-}
 
-.menu-burger:hover hr {
-	width: 16px;
-	margin: 4px 0px;
-	border: 1px solid #F15742;
-}*/
 
 .menu-burger span {
 	background-color: #ffffff;
@@ -246,18 +263,46 @@ li.home {
 	transform: rotate(45deg);
 }
 
+/* right-arrow "read more" icon */
+.read-more {
+	display: flex;
+	align-items: center;
+}
 
-/*--- FLEX CONTAINERS ---*/
+.arrow-icon {
+	margin-left: 5px;
+}
 
-.home-div, .portfolio-div, .resume-div, .contact-div {
+.read-more h2, .read-more i {
+	color: #F15742;
+	transition: .5s color;
+}
+
+.read-more:hover h2, .read-more:hover i {
+	color: #DE3C4B;
+}
+
+.read-more:active h2, .read-more:active i {
+	color: #F15742;
+}
+
+
+
+/*--- FLEX CONTAINERS & OTHER GENERAL ---*/
+
+.home-div, .portfolio-div, .resume-div, .contact-div, .project-div {
 	display: flex;
 	max-width: 950px;
 	margin: auto;
 }
 
-.portfolio-div, .resume-div, .contact-div {
+.contact-div, .project-div {
 	flex-direction: column;
 }
+
+/*.wide img {
+	width: 100%
+}*/
 
 /*--- HOME ---*/
 
@@ -288,19 +333,77 @@ div.welcome-text {
 footer {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 
 /*--- PORTFOLIO ---*/
 
 
-.portfolio-div img {
+.portfolio-div img, .project-div img {
 	width: 100%;
+	display: block;
 }
+
+.portfolio-item {
+	display: flex;
+}
+
+.portfolio-logo {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.portfolio-text {
+	display: flex;
+	flex: 2;
+	background-color: #F0F0F0;
+}
+
+/* scale up on hover */
+.portfolio-logo {
+	transition-duration: .5s;
+	transition-property: transform;
+}
+
+.portfolio-item:hover .portfolio-logo {
+	transform: scale(1.05);
+}
+
+/* change text bg color on hover */
+.portfolio-text {
+	transition-duration: 1s;
+	transition-property: background-color;
+}
+
+.portfolio-item:hover .portfolio-text {
+	background-color: #FDEEEC;
+}
+
+.md-img-portfolio {
+	max-width: 350px;
+	display: flex;
+	margin: 40px auto;
+}
+
+.prev-next {
+	display: flex;
+	justify-content: space-between;
+}
+
 
 /*-- RESUME --*/
 
+/*-- PROJECTS --*/
 
+.banner {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
 
 
 /* === WUFOO CONTACT FORM === */
@@ -330,23 +433,28 @@ label {
 	font-size: 1.1em;
 }
 
-.buttons input {
+.buttons input, button {
 	background-color: rgba( 241, 89, 70, 0.15);
-	border: 1px solid #F15946;
+	border: 0px;
 	border-radius: 3px;
 	padding: 10px 20px;
 	color: #F15946;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
+	height: 50px;
 }
 
-.buttons input:hover {
+.buttons input:hover, button:hover {
 	background-color: rgba( 241, 89, 70, 0.35);
 }
 
-.buttons input:active {
+.buttons input:active, button:active {
 	background-color: rgba( 241, 89, 70, 0.25);
+}
+
+.buttons input, button {
+	transition: .5s background-color;
 }
 
 /* === TO TOP BUTTON === */
@@ -386,11 +494,13 @@ label {
 
 /*== MEDIUM ==*/
 
+
 @media(min-width: 779px) {
 
+/* Hide mobile menu */
 .menu-burger, .mobile-menu {
 	display: none;
-} /* Hide mobile menu */
+} 
 
 .rj-square {
 	display: none;
@@ -398,13 +508,13 @@ label {
 
 }
 
-/* -- */
 
 @media(max-width: 778px) {
 
+/* Hide desktop menu */
 .menu .menu-item {
 	display: none;
-} /* Hide desktop menu */
+} 
 
 .home-div {
 	flex-direction: column;
@@ -413,7 +523,6 @@ label {
 
 .portrait {
 	text-align: center;
-/*	order: 2;*/
 }
 
 .rj {
@@ -428,6 +537,39 @@ div.welcome-text {
 	margin-bottom: 0px;
 }
 
+/* Portfolio */
+
+/* That awkward tablet size, adding padding and gray behind logo */
+.portfolio-item	{
+	flex-direction: column;
+	background-color: #F0F0F0;
+	padding-top: 25px;
+}
+
+.portfolio-logo {
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.portfolio-text {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.read-more {
+	justify-content: center;
+}
+
+}
+
+@media(max-width: 830px) {
+
+/* That other awkward tablet size, with 50/50 split logo and text */
+.portfolio-logo {
+	flex: 2;
+}
+
+
 }
 
 /*== SMALL ==*/
@@ -441,6 +583,28 @@ div.welcome-text {
 .home-div {
 	flex-direction: column;
 }
+
+
+}
+
+/*== X-SMALL ==*/
+
+@media(max-width: 400px) {
+
+/* Back to full-width logo for mobile */
+.portfolio-text {
+	margin-top: 0px;
+	text-align: left;
+}
+
+.portfolio-logo {
+	max-width: 350px;
+}
+
+.portfolio-item {
+	padding-top: 0px;
+}
+
 
 }
 
